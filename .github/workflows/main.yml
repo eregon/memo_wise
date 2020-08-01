@@ -18,6 +18,7 @@ jobs:
         bundler-cache: true
     - run: bundle list
     - run: bundle info rubocop
+    - run: tree vendor/bundle/*/2.*.0/gems/rubocop-0.88.0
     - run: bundle exec rubocop -h
       env:
         RUBYOPT: "-d"
