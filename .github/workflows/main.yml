@@ -19,5 +19,7 @@ jobs:
     - run: bundle list
     - run: bundle info rubocop
     - run: bundle exec rubocop -h
+      env:
+        RUBYOPT: "-d"
     - run: bundle exec rubocop
     - run: bundle exec rspec
